@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
@@ -33,10 +34,10 @@ const howItWorksSteps = [
 ];
 
 const partners = [
-  { name: "Mission Clean Bharat", logo: "https://placehold.co/100x100", description: "Pioneering new methods for upcycling multi-layered plastics.", data_ai_hint: "logo recycling" },
-  { name: "Chintan India", logo: "https://placehold.co/100x100", description: "Empowering waste pickers and promoting environmental justice.", data_ai_hint: "logo nature" },
-  { name: "ScrapUncle", logo: "https://placehold.co/100x100", description: "Streamlining scrap collection with a user-friendly digital platform.", data_ai_hint: "logo technology" },
-  { name: "WasteWorthy", logo: "https://placehold.co/100x100", description: "Transforming diverse waste streams into valuable new products.", data_ai_hint: "logo minimal" },
+  { name: "Mission Clean Bharat", logo: "https://placehold.co/100x100", description: "Pioneering new methods for upcycling multi-layered plastics.", data_ai_hint: "logo recycling", href: "https://sbmurban.org/" },
+  { name: "Chintan India", logo: "https://placehold.co/100x100", description: "Empowering waste pickers and promoting environmental justice.", data_ai_hint: "logo nature", href: "https://www.chintan-india.org/" },
+  { name: "ScrapUncle", logo: "https://placehold.co/100x100", description: "Streamlining scrap collection with a user-friendly digital platform.", data_ai_hint: "logo technology", href: "https://www.scrapuncle.com/" },
+  { name: "WasteWorthy", logo: "https://placehold.co/100x100", description: "Transforming diverse waste streams into valuable new products.", data_ai_hint: "logo minimal", href: "https://www.wasteworthy.com/" },
 ];
 
 const marketplaceItems = [
@@ -138,14 +139,16 @@ export default function Home() {
           <h2 className="text-3xl md:text-4xl font-headline font-bold text-center mb-12">Our Inspiring Partners</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {partners.map((partner) => (
-              <Card key={partner.name} className="flex flex-col items-center text-center p-6">
-                 <Avatar className="w-24 h-24 mb-4 border-4 border-secondary">
-                  <AvatarImage src={partner.logo} alt={partner.name} data-ai-hint={partner.data_ai_hint} />
-                  <AvatarFallback>{partner.name.charAt(0)}</AvatarFallback>
-                </Avatar>
-                <h3 className="font-headline text-lg font-semibold">{partner.name}</h3>
-                <p className="text-sm text-muted-foreground mt-2">{partner.description}</p>
-              </Card>
+              <Link key={partner.name} href={partner.href} target="_blank" rel="noopener noreferrer" className="block h-full">
+                <Card className="flex flex-col items-center text-center p-6 h-full hover:shadow-xl transition-shadow duration-300">
+                  <Avatar className="w-24 h-24 mb-4 border-4 border-secondary">
+                    <AvatarImage src={partner.logo} alt={partner.name} data-ai-hint={partner.data_ai_hint} />
+                    <AvatarFallback>{partner.name.charAt(0)}</AvatarFallback>
+                  </Avatar>
+                  <h3 className="font-headline text-lg font-semibold">{partner.name}</h3>
+                  <p className="text-sm text-muted-foreground mt-2 flex-grow">{partner.description}</p>
+                </Card>
+              </Link>
             ))}
           </div>
         </div>
