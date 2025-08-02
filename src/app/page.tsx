@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, Recycle, Truck, Factory, Users, ShoppingBag, Leaf } from "lucide-react";
+import { ArrowRight, Recycle, Truck, Factory, Users, ShoppingBag, Leaf, Heart } from "lucide-react";
 
 const howItWorksSteps = [
   {
@@ -61,6 +61,30 @@ const marketplaceItems = [
     price: "₹499",
     data_ai_hint: "plastic planter"
   },
+];
+
+const artisanStories = [
+    {
+        name: "Rajeshwari Devi",
+        image: "https://placehold.co/400x400",
+        location: "Varanasi, Uttar Pradesh",
+        story: "For generations, my family has woven dreams into fabric. This platform gives my craft a new voice, a way to reach people who truly appreciate the soul of handloom.",
+        data_ai_hint: "artisan woman"
+    },
+    {
+        name: "Salim Ansari",
+        image: "https://placehold.co/400x400",
+        location: "Bhagalpur, Bihar",
+        story: "The looms were almost silent. Now, with access to new markets and fair prices for our silk, there is a rhythm of hope in our village once again.",
+        data_ai_hint: "artisan man"
+    },
+    {
+        name: "Lakshmi Murmu",
+        image: "https://placehold.co/400x400",
+        location: "Kutch, Gujarat",
+        story: "Each thread tells a story of my ancestors. ReThread Connect helps me share these stories with the world, ensuring our traditions don't just survive, but thrive.",
+        data_ai_hint: "weaving hands"
+    }
 ];
 
 export default function Home() {
@@ -153,6 +177,28 @@ export default function Home() {
               <Link href="/marketplace">Explore Marketplace <ShoppingBag className="ml-2" /></Link>
             </Button>
           </div>
+        </div>
+      </section>
+
+      {/* Artisan Stories Section */}
+      <section id="artisan-stories" className="bg-secondary/50 py-16 md:py-24">
+        <div className="container mx-auto px-4">
+            <h2 className="text-3xl md:text-4xl font-headline font-bold text-center mb-12">Voices from the Loom</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+                {artisanStories.map((artisan) => (
+                    <div key={artisan.name} className="flex flex-col items-center text-center">
+                        <Image src={artisan.image} alt={artisan.name} data-ai-hint={artisan.data_ai_hint} width={150} height={150} className="rounded-full w-36 h-36 object-cover mb-4 border-4 border-background shadow-lg"/>
+                        <h3 className="font-headline text-xl font-semibold">{artisan.name}</h3>
+                        <p className="text-sm text-muted-foreground mb-4">{artisan.location}</p>
+                        <p className="text-foreground/80 italic">"{artisan.story}"</p>
+                    </div>
+                ))}
+            </div>
+            <div className="text-center mt-12">
+                <Button asChild size="lg" variant="outline">
+                    <Link href="#">Share Your Story <Heart className="ml-2" /></Link>
+                </Button>
+            </div>
         </div>
       </section>
 
