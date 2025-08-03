@@ -36,7 +36,7 @@ const howItWorksSteps = [
 const partners = [
   { name: "Mission Clean Bharat", logo: "https://placehold.co/100x100", description: "Pioneering new methods for upcycling multi-layered plastics.", data_ai_hint: "logo recycling", href: "https://sbmurban.org/" },
   { name: "Chintan India", logo: "https://placehold.co/100x100", description: "Empowering waste pickers and promoting environmental justice.", data_ai_hint: "logo nature", href: "https://www.chintan-india.org/" },
-  { name: "ScrapUncle", logo: "https://placehold.co/100x100", description: "Streamlining scrap collection with a user-friendly digital platform.", data_ai_hint: "logo technology", href: "https://www.scrapuncle.com/" },
+  { name: "ScrapUncle", logo: "https://placehold.co/100x100", description: "Streamlining scrap collection with a user-friendly digital platform.", data_ai_hint: "logo technology", href: "https://scrapuncle.com/" },
   { name: "MuddleArt", logo: "https://placehold.co/100x100", description: "Transforming diverse waste streams into valuable new products.", data_ai_hint: "logo minimal", href: "https://www.muddleart.com/" },
 ];
 
@@ -204,7 +204,7 @@ export default function Home() {
             </div>
             <div className="text-center mt-12">
                 <Button asChild size="lg" variant="outline">
-                    <Link href="#">Share Your Story <Heart className="ml-2" /></Link>
+                    <Link href="/share-story">Share Your Story <Heart className="ml-2" /></Link>
                 </Button>
             </div>
         </div>

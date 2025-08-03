@@ -12,6 +12,7 @@ const navLinks = [
   { href: "/find-materials", label: "Find Materials" },
   { href: "/marketplace", label: "Marketplace" },
   { href: "/join-us", label: "Become a Partner" },
+  { href: "/share-story", label: "Share Your Story" },
   { href: "/recommendations", label: "AI Recommender" },
   { href: "/dashboard", label: "Admin Dashboard" },
 ];
