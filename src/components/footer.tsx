@@ -26,9 +26,9 @@ export function Footer() {
             <h3 className="font-headline font-semibold mb-4">Resources</h3>
             <ul className="space-y-2 text-sm">
               <li><Link href="#" className="hover:text-primary transition-colors">About Us</Link></li>
+              <li><Link href="/join-us" className="hover:text-primary transition-colors">Become a Partner</Link></li>
               <li><Link href="#" className="hover:text-primary transition-colors">Contact</Link></li>
               <li><Link href="#" className="hover:text-primary transition-colors">FAQ</Link></li>
-              <li><Link href="#" className="hover:text-primary transition-colors">Partnerships</Link></li>
             </ul>
           </div>
           <div>

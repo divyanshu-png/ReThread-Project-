@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, Recycle, Truck, Factory, Users, ShoppingBag, Leaf, Heart } from "lucide-react";
+import { ArrowRight, Recycle, Truck, Factory, Users, ShoppingBag, Leaf, Heart, Handshake } from "lucide-react";
 
 const howItWorksSteps = [
   {
@@ -37,7 +37,7 @@ const partners = [
   { name: "Mission Clean Bharat", logo: "https://placehold.co/100x100", description: "Pioneering new methods for upcycling multi-layered plastics.", data_ai_hint: "logo recycling", href: "https://sbmurban.org/" },
   { name: "Chintan India", logo: "https://placehold.co/100x100", description: "Empowering waste pickers and promoting environmental justice.", data_ai_hint: "logo nature", href: "https://www.chintan-india.org/" },
   { name: "ScrapUncle", logo: "https://placehold.co/100x100", description: "Streamlining scrap collection with a user-friendly digital platform.", data_ai_hint: "logo technology", href: "https://www.scrapuncle.com/" },
-  { name: "WasteWorthy", logo: "https://placehold.co/100x100", description: "Transforming diverse waste streams into valuable new products.", data_ai_hint: "logo minimal", href: "https://www.wasteworthy.com/" },
+  { name: "MuddleArt", logo: "https://placehold.co/100x100", description: "Transforming diverse waste streams into valuable new products.", data_ai_hint: "logo minimal", href: "https://www.muddleart.com/" },
 ];
 
 const marketplaceItems = [
@@ -150,6 +150,11 @@ export default function Home() {
                 </Card>
               </Link>
             ))}
+          </div>
+           <div className="text-center mt-12">
+            <Button asChild size="lg">
+              <Link href="/join-us">Become a Partner <Handshake className="ml-2" /></Link>
+            </Button>
           </div>
         </div>
       </section>

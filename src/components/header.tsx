@@ -11,6 +11,7 @@ const navLinks = [
   { href: "/list-waste", label: "List Waste" },
   { href: "/find-materials", label: "Find Materials" },
   { href: "/marketplace", label: "Marketplace" },
+  { href: "/join-us", label: "Become a Partner" },
   { href: "/recommendations", label: "AI Recommender" },
   { href: "/dashboard", label: "Admin Dashboard" },
 ];
