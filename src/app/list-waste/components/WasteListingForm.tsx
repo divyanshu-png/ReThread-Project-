@@ -36,6 +36,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { useToast } from "@/hooks/use-toast"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { useRef } from "react"
 
 const formSchema = z.object({
   userType: z.enum(["individual", "ngo"], {
@@ -59,6 +60,7 @@ const formSchema = z.object({
 
 export function WasteListingForm() {
   const { toast } = useToast()
+  const photoRef = useRef<HTMLInputElement>(null)
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -212,7 +214,11 @@ export function WasteListingForm() {
                 <FormItem>
                   <FormLabel>Attach a Photo (Optional)</FormLabel>
                   <FormControl>
-                    <Input type="file" {...field} />
+                    <Input
+                      type="file"
+                      ref={photoRef}
+                      onChange={(e) => field.onChange(e.target.files)}
+                    />
                   </FormControl>
                   <FormDescription>
                     A picture helps our team assess the materials.
