@@ -1,3 +1,4 @@
+
 "use client"
 
 import { zodResolver } from "@hookform/resolvers/zod"
@@ -61,9 +62,14 @@ export function WasteListingForm() {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
+      userType: "individual",
       name: "",
       address: "",
+      materialType: "",
       description: "",
+      weight: 1,
+      pickupTime: "",
+      photo: undefined,
     },
   })
 
