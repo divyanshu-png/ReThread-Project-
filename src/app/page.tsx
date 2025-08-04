@@ -70,21 +70,21 @@ const artisanStories = [
         image: "https://placehold.co/400x400",
         location: "Varanasi, Uttar Pradesh",
         story: "For generations, my family has woven dreams into fabric. This platform gives my craft a new voice, a way to reach people who truly appreciate the soul of handloom.",
-        data_ai_hint: "artisan woman"
+        data_ai_hint: "indian woman"
     },
     {
         name: "Salim Ansari",
         image: "https://placehold.co/400x400",
         location: "Bhagalpur, Bihar",
         story: "The looms were almost silent. Now, with access to new markets and fair prices for our silk, there is a rhythm of hope in our village once again.",
-        data_ai_hint: "artisan man"
+        data_ai_hint: "indian man"
     },
     {
         name: "Lakshmi Murmu",
         image: "https://placehold.co/400x400",
         location: "Kutch, Gujarat",
         story: "Each thread tells a story of my ancestors. ReThread Connect helps me share these stories with the world, ensuring our traditions don't just survive, but thrive.",
-        data_ai_hint: "weaving hands"
+        data_ai_hint: "woman weaving"
     }
 ];
 
