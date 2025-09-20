@@ -154,18 +154,10 @@ If you’d like, we can add a `CONTRIBUTING.md` and `CODE_OF_CONDUCT.md` to guid
 
 ## License
 
-This project is intended to be released under the **MIT License**. Add a `LICENSE` file to the repo root containing the MIT license text (replace `[year]` and `[fullname]`).
+This project is intended to be released under the **MIT License**. Add a `LICENSE` file to the repo root containing the MIT license text.
 
 ## Contact
 
-Project owner / maintainer: *add your name & contact details*
+Project owner / maintainer: *Divyanshu Singh, thedndivyanshu27@gmail.com *
 
 ---
-
-*If you want, I can now:*
-
-* generate a polished `LICENSE` (MIT) file you can paste into the repo,
-* draft `CONTRIBUTING.md` and `CODE_OF_CONDUCT.md`, or
-* produce a detailed project plan converted into GitHub Issues and milestones.
-
-Which of these would you like me to create next?
