@@ -77,19 +77,19 @@ ReThread directly addresses environmental and socio-economic goals:
 
 ## Tech stack 
 
-* ** Core Framework**: Next.js 15 with React 18. This provides the foundation for the application, handling server-side rendering, routing (using the App Router), and overall structure.
+* **Core Framework**: Next.js 15 with React 18. This provides the foundation for the application, handling server-side rendering, routing (using the App Router), and overall structure.
 
-* ** Language**: TypeScript. All the code is written in TypeScript (.ts, .tsx) to ensure type safety and improve code quality, which helps prevent bugs.
+* **Language**: TypeScript. All the code is written in TypeScript (.ts, .tsx) to ensure type safety and improve code quality, which helps prevent bugs.
 
-* ** UI Components**: ShadCN UI. This is not a traditional component library but a collection of reusable UI components (like Button, Card, Input) built on top of Radix UI. You can see all these components in your src/components/ui folder.
+* **UI Components**: ShadCN UI. This is not a traditional component library but a collection of reusable UI components (like Button, Card, Input) built on top of Radix UI. You can see all these components in your src/components/ui folder.
 
-* ** Styling**: Tailwind CSS. This utility-first CSS framework is used for all the styling. It allows for rapid UI development by composing utility classes directly in the code. The specific theme colors, fonts, and other design tokens are configured in src/app/globals.css and tailwind.config.ts.
+* **Styling**: Tailwind CSS. This utility-first CSS framework is used for all the styling. It allows for rapid UI development by composing utility classes directly in the code. The specific theme colors, fonts, and other design tokens are configured in src/app/globals.css and tailwind.config.ts.
 
-* ** Form Management**: React Hook Form is used to manage form state, and Zod is used for schema validation. This powerful combination makes it easy to handle complex forms, like the ones for listing waste or applying for a partnership, ensuring that the user-submitted data is correct.
+* **Form Management**: React Hook Form is used to manage form state, and Zod is used for schema validation. This powerful combination makes it easy to handle complex forms, like the ones for listing waste or applying for a partnership, ensuring that the user-submitted data is correct.
 
-* ** AI Integration**: Genkit is the framework used to connect to and manage interactions with Google's Gemini AI models. This powers your "AI Material Recommender" feature, with the logic defined in src/ai/flows/material-recommender.ts.
+* **AI Integration**: Genkit is the framework used to connect to and manage interactions with Google's Gemini AI models. This powers your "AI Material Recommender" feature, with the logic defined in src/ai/flows/material-recommender.ts.
 
-* ** Icons**: Lucide React. This is a simple and clean icon library used throughout the application for clear and consistent iconography.
+* **Icons**: Lucide React. This is a simple and clean icon library used throughout the application for clear and consistent iconography.
 
 
 
